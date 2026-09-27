@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#efe6d8">
+  <meta name="description" content="دعوتنامه عروسی سوگل و امیرحسین — ۲۰ دی ۱۴۰۵">
+  <meta name="format-detection" content="telephone=no">
+  <title>سوگل و امیرحسین | دعوتنامه عروسی</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Gulzar&family=Vazirmatn:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cover.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       COVER — the sealed envelope. Click to open.
+       ====================================================================== -->
+  <section id="cover" class="cover" aria-label="گشودن دعوتنامه">
+    <div class="cover-frame" aria-hidden="true"></div>
+    <div class="cover-particles" id="coverParticles" aria-hidden="true"></div>
+    <div class="heart-light" id="heartLight" aria-hidden="true">
+      <svg viewBox="0 0 100 92" fill="none">
+        <path class="heart-fill" d="M50 88C50 88 6 59 6 31C6 16 17 6 30 6C39 6 46 11 50 18C54 11 61 6 70 6C83 6 94 16 94 31C94 59 50 88 50 88Z"
+          fill="url(#heartGhost)"/>
+        <path class="heart-track" d="M50 88C50 88 6 59 6 31C6 16 17 6 30 6C39 6 46 11 50 18C54 11 61 6 70 6C83 6 94 16 94 31C94 59 50 88 50 88Z"
+          stroke="rgba(217,190,132,.30)" stroke-width=".5"/>
+        <path class="heart-trail" d="M50 88C50 88 6 59 6 31C6 16 17 6 30 6C39 6 46 11 50 18C54 11 61 6 70 6C83 6 94 16 94 31C94 59 50 88 50 88Z"
+          stroke="url(#trailLight)" stroke-width="1.5" stroke-linecap="round"/>
+        <defs>
+          <radialGradient id="heartGhost" cx=".5" cy=".42" r=".7">
+            <stop offset="0" stop-color="#fff6de" stop-opacity=".10"/>
+            <stop offset=".55" stop-color="#e6d6b9" stop-opacity=".06"/>
+            <stop offset="1" stop-color="#d9be84" stop-opacity=".04"/>
+          </radialGradient>
+          <linearGradient id="trailLight" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff9ec"/>
+            <stop offset=".5" stop-color="#f0dfb4"/>
+            <stop offset="1" stop-color="#e6d6b9"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <span class="cover-edge" aria-hidden="true">Sogol &amp; Amirhossein · <i data-d="latin">20 Dey 1405</i></span>
+
+    <div class="cover-head">
+      <div class="cover-kicker"><i></i><span><b>Wedding</b><b>Invitation</b></span><i></i></div>
+      <p class="cover-names">سوگل <em>و</em> امیرحسین</p>
+    </div>
+
+    <button id="openCard" class="envelope-stage" type="button" aria-label="باز کردن دعوتنامه">
+      <span class="env-glow" aria-hidden="true"></span>
+      <span class="env-shadow" aria-hidden="true"></span>
+      <span class="env-back" aria-hidden="true"><span class="env-damask"></span></span>
+
+      <span class="letter">
+        <span class="letter-fold" aria-hidden="true"></span>
+        <span class="letter-inner">
+          <span class="letter-kicker">Wedding Invitation</span>
+          <span class="letter-monogram">S <b>♡</b> A</span>
+          <span class="letter-names">سوگل <i>و</i> امیرحسین</span>
+          <span class="letter-date" data-d="dmy">۲۰ دی ۱۴۰۵</span>
+          <span class="letter-venue">تالار حاجی زاده</span>
+        </span>
+      </span>
+
+      <span class="flap" aria-hidden="true"><span class="flap-out"><span class="flap-foil"></span></span><span class="flap-liner"></span></span>
+      <span class="env-front" aria-hidden="true"></span>
+      <span class="env-sides" aria-hidden="true"></span>
+      <span class="seal-glow" aria-hidden="true"></span>
+      <span class="env-shimmer" aria-hidden="true"></span>
+      <span class="seal" id="seal" aria-hidden="true">
+        <span class="seal-edge"></span><span class="seal-ring"></span>
+        <span class="seal-letters"><span>S</span><b>♡</b><span>A</span></span>
+      </span>
+      <span class="open-label" aria-hidden="true"><strong>برای گشودن</strong><i></i><small>لمس کنید</small></span>
+    </button>
+
+    <div class="cover-foot">
+      <div class="cover-date"><i></i><b data-d="day">۲۰</b><span data-d="month">دی</span><b data-d="year">۱۴۰۵</b><i></i></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE — revealed once the envelope opens
+       ====================================================================== -->
+  <main id="site" class="site" aria-hidden="true">
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+    <div class="music-pill" id="musicStatus" aria-live="polite"><span class="music-dot"></span><span>موسیقی خاموش</span></div>
+
+    <!-- HERO -->
+    <header class="hero section" data-reveal="rise">
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">به نام عشق</p>
+        <div class="hero-monogram reveal">S <span>♡</span> A</div>
+        <h1 class="names reveal"><span class="hero-names-line">سوگل</span><em>و</em><span class="hero-names-line">امیرحسین</span></h1>
+        <p class="hero-copy reveal">بعضی آغازها آن‌قدر زیبا هستند که دوست داریم عزیزترین آدم‌های زندگی‌مان شاهدشان باشند.</p>
+        <div class="hero-date reveal"><span data-d="day">۲۰</span><b data-d="month">دی</b><span data-d="year">۱۴۰۵</span></div>
+        <div class="scroll-cue reveal"><i></i><span>برای ادامه، آرام به پایین بروید</span></div>
+      </div>
+    </header>
+
+    <!-- INVITATION NOTE -->
+    <section class="section invitation-note" data-reveal="rise" aria-labelledby="noteTitle">
+      <div class="ornament-line reveal" aria-hidden="true"><span></span><b>❦</b><span></span></div>
+      <div class="note-paper reveal">
+        <span class="corner-ticks" aria-hidden="true"></span>
+        <span class="wax-stamp wax-stamp--inline" aria-hidden="true"><span>S</span><b>♡</b><span>A</span></span>
+        <p class="eyebrow">دعوتی از صمیم قلب</p>
+        <h2 id="noteTitle">قرار است یک شب،<br><em>برای همیشه</em> در خاطرمان بماند.</h2>
+        <p>ما در آستانه شروع فصل تازه‌ای از زندگی‌مان هستیم؛ فصلی که دوست داریم اولین صفحه‌اش با حضور شما نوشته شود.</p>
+        <p>اگر این دعوتنامه به دست شما رسیده، یعنی جای شما در این شب، کنار ماست.</p>
+        <div class="signature">با عشق، <strong>سوگل و امیرحسین</strong></div>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="section date-story" data-reveal="zoom" aria-label="تاریخ مراسم">
+      <div class="section-label reveal"><span>The Date</span></div>
+      <div class="calendar-card reveal">
+        <span class="corner-ticks" aria-hidden="true"></span>
+        <div class="calendar-top"><span data-c="month">دی</span><span data-c="year">۱۴۰۵</span></div>
+        <div class="calendar-grid" id="calendarGrid" aria-label="تقویم ماه مراسم">
+          <span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span>
+        </div>
+        <div class="calendar-caption"><strong data-c="day">۲۰</strong><div><span data-c="month2">دی</span><small>شبی که انتخابمان را جشن می‌گیریم</small></div></div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown-section" data-reveal="rise" aria-label="شمارش معکوس">
+      <div class="section-head reveal"><span></span><h2>تا شروع جشن</h2><span></span></div>
+      <p class="section-intro reveal">هر ثانیه، یک قدم نزدیک‌تر به شبی که منتظرش هستیم.</p>
+      <div id="countdown" class="countdown reveal">
+        <div class="time-box"><strong data-unit="days">—</strong><span>روز</span></div>
+        <div class="time-box"><strong data-unit="hours">—</strong><span>ساعت</span></div>
+        <div class="time-box"><strong data-unit="minutes">—</strong><span>دقیقه</span></div>
+        <div class="time-box"><strong data-unit="seconds">—</strong><span>ثانیه</span></div>
+      </div>
+    </section>
+
+    <!-- QUOTE BAND -->
+    <section class="section quote-band" data-reveal="zoom" aria-label="شب آغاز ما">
+      <span class="wax-stamp wax-stamp--inline reveal" aria-hidden="true"><span>S</span><b>♡</b><span>A</span></span>
+      <p class="quote-text reveal">یک شب،<br>یک آغاز،<br>یک «ما»</p>
+      <div class="ornament-line reveal" aria-hidden="true"><span></span><b>❦</b><span></span></div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section story-cards-section" data-reveal="rise" aria-labelledby="storyCardsTitle">
+      <div class="section-label reveal"><span>Our Story</span></div>
+      <h2 id="storyCardsTitle" class="display-title reveal">قصه‌ی رسیدن ما</h2>
+      <p class="section-intro reveal">هر عشقی مسیری دارد؛ این‌ها گام‌هایی بود که ما را تا امروز رساند.</p>
+      <div class="story-cards">
+        <article class="story-card reveal">
+          <span class="story-card-num">۱</span>
+          <h3>آغاز</h3>
+          <p>از یک نگاه ساده شروع شد؛ نگاهی که قرار بود پایانِ تنهاییِ هر دو باشد.</p>
+        </article>
+        <article class="story-card reveal">
+          <span class="story-card-num">۲</span>
+          <h3>مسیر</h3>
+          <p>روزها گذشتند و از کنار هم بودن، به با هم ماندن رسیدیم.</p>
+        </article>
+        <article class="story-card reveal">
+          <span class="story-card-num">۳</span>
+          <h3>امروز</h3>
+          <p>و حالا، با شما کنارمان، شروعِ زیباترین فصل زندگی‌مان را جشن می‌گیریم.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section story-section" data-reveal="left" aria-labelledby="storyTitle">
+      <div class="section-label reveal"><span>Our Evening</span></div>
+      <h2 id="storyTitle" class="display-title reveal">قصه‌ی شب ما</h2>
+      <p class="section-intro reveal">از اولین لحظه ورودتان تا آخرین لبخند شب، دوست داریم همه‌چیز آرام، زیبا و ماندگار باشد.</p>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section" data-reveal="right" aria-labelledby="galleryTitle">
+      <div class="section-label reveal"><span>Memories</span></div>
+      <div class="gallery-heading reveal">
+        <div><h2 id="galleryTitle" class="display-title">قاب‌هایی از ما</h2><p>این قسمت جای خاطره‌های واقعی ماست.</p></div>
+        <span class="gallery-mark">S♡A</span>
+      </div>
+      <div class="gallery-grid">
+        <figure class="photo reveal"><img src="assets/images/hero.svg" alt="جایگاه تصویر اصلی سوگل و امیرحسین"><figcaption><span>01</span> آغاز ما</figcaption></figure>
+        <figure class="photo reveal"><img src="assets/images/gallery-01.svg" alt="جایگاه تصویر سوگل و امیرحسین"><figcaption><span>02</span> یک قاب</figcaption></figure>
+        <figure class="photo reveal"><img src="assets/images/childhood.svg" alt="جایگاه تصویر خاطره کودکی"><figcaption><span>03</span> از آن روزها</figcaption></figure>
+        <figure class="photo reveal"><img src="assets/images/gallery-02.svg" alt="جایگاه تصویر خاطره مشترک"><figcaption><span>04</span> کنار هم</figcaption></figure>
+      </div>
+      <p class="gallery-note reveal">تصاویر واقعی بعداً جای این قاب‌ها را می‌گیرند؛ بدون نیاز به تغییر در طراحی.</p>
+    </section>
+
+    <!-- VENUE -->
+    <section class="section venue-section" data-reveal="left" aria-labelledby="venueTitle">
+      <div class="venue-wrap reveal">
+        <div class="venue-copy">
+          <div class="section-label"><span>The Venue</span></div>
+          <p class="eyebrow">قرارمان کجاست؟</p>
+          <h2 id="venueTitle">تالار حاجی زاده<br><em>گنبد</em></h2>
+          <p>مقصدتان همین‌جاست؛ و امیدواریم مسیرتان به این شب، به اندازه خود شب شیرین باشد.</p>
+          <div class="map-buttons">
+            <a href="https://nshn.ir/f1_bW9H3NGNGLq" target="_blank" rel="noopener noreferrer">نشان <small>↗</small></a>
+            <a href="https://balad.ir/p/2KzUWm675cO0Yr" target="_blank" rel="noopener noreferrer">بلد <small>↗</small></a>
+            <a href="https://maps.app.goo.gl/ZivH15TY4DJxTtNb8?g_st=ic" target="_blank" rel="noopener noreferrer">Google Maps <small>↗</small></a>
+          </div>
+        </div>
+        <div class="venue-visual"><img src="assets/images/venue.svg" alt="جایگاه تصویر تالار حاجی زاده گنبد"><span>Gonbad</span></div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp-section" data-reveal="zoom" aria-labelledby="rsvpTitle">
+      <div class="ornament-line reveal" aria-hidden="true"><span></span><b>❦</b><span></span></div>
+      <div class="rsvp-card reveal">
+        <span class="corner-ticks" aria-hidden="true"></span>
+        <span class="wax-stamp wax-stamp--inline" aria-hidden="true"><span>S</span><b>♡</b><span>A</span></span>
+        <p class="eyebrow">پاسخ شما</p>
+        <h2 id="rsvpTitle">آیا در این شب<br>کنار ما هستید؟</h2>
+        <p class="section-intro">حضور شما، زیباترین بخش این جشن است. لطفاً تا ۱۰ دی پاسخ خود را ثبت کنید.</p>
+
+        <form id="rsvpForm" novalidate>
+          <div class="rsvp-steps">
+            <span class="rsvp-dot active" data-dot="1"></span>
+            <span class="rsvp-dot" data-dot="2"></span>
+            <span class="rsvp-dot" data-dot="3"></span>
+          </div>
+
+          <div class="rsvp-step" data-step="1">
+            <div class="rsvp-field" id="field-name">
+              <label for="rsvpName">نام و نام خانوادگی</label>
+              <input id="rsvpName" name="name" type="text" autocomplete="name" placeholder="مثلاً: خانواده رضایی" required>
+              <p class="rsvp-error">لطفاً نام خود را وارد کنید.</p>
+            </div>
+            <div class="rsvp-actions"><button class="primary-btn rsvp-next" type="button" data-goto="2">ادامه</button></div>
+          </div>
+
+          <div class="rsvp-step rsvp-hidden" data-step="2">
+            <div class="rsvp-field">
+              <label>حضور شما</label>
+              <div class="rsvp-choices">
+                <label class="rsvp-choice">
+                  <input type="radio" name="attending" value="yes" checked>
+                  <span><b>♥</b> حاضر می‌شوم</span>
+                </label>
+                <label class="rsvp-choice">
+                  <input type="radio" name="attending" value="no">
+                  <span><b>✕</b> متأسفانه نمی‌توانم</span>
+                </label>
+              </div>
+            </div>
+            <div class="rsvp-field rsvp-hidden" id="field-guests">
+              <label for="rsvpGuests">تعداد همراهان</label>
+              <select id="rsvpGuests" name="guests">
+                <option value="۰">تنها خودم</option>
+                <option value="۱">۱ نفر همراه</option>
+                <option value="۲">۲ نفر همراه</option>
+                <option value="۳">۳ نفر همراه</option>
+                <option value="۴">۴ نفر همراه</option>
+                <option value="۵">۵ نفر همراه</option>
+              </select>
+            </div>
+            <div class="rsvp-actions">
+              <button class="ghost-btn rsvp-prev" type="button" data-goto="1">بازگشت</button>
+              <button class="primary-btn rsvp-next" type="button" data-goto="3">ادامه</button>
+            </div>
+          </div>
+
+          <div class="rsvp-step rsvp-hidden" data-step="3">
+            <div class="rsvp-field">
+              <label for="rsvpNote">پیام کوتاه (اختیاری)</label>
+              <textarea id="rsvpNote" name="note" rows="3" placeholder="هر چیزی که دلتان می‌خواهد با ما در میان بگذارید…"></textarea>
+            </div>
+            <div class="rsvp-actions">
+              <button class="ghost-btn rsvp-prev" type="button" data-goto="2">بازگشت</button>
+              <button class="primary-btn" type="submit">ثبت پاسخ</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="rsvp-done rsvp-hidden" id="rsvpDone">
+          <div class="done-mark">Thank you</div>
+          <h3 id="rsvpThanks">پاسخ شما ثبت شد</h3>
+          <p>برای نهایی کردن، پاسختان را یکی از روش‌های زیر برای ما بفرستید تا در فهرست مهمانانمان ثبت کنیم.</p>
+          <div class="rsvp-send">
+            <a class="primary-btn" id="rsvpWhatsapp" href="#" target="_blank" rel="noopener">ارسال با واتساپ</a>
+          </div>
+          <button class="rsvp-reset" id="rsvpReset" type="button">ویرایش پاسخ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section closing-section" data-reveal="rise" aria-label="بازدید">
+      <div class="closing-star reveal">✦</div>
+      <div class="closing-monogram reveal">S <span>♡</span> A</div>
+      <p class="eyebrow reveal">با تمام عشق</p>
+      <h2 class="reveal">حضور شما،<br><em>این شب را کامل می‌کند.</em></h2>
+      <p class="closing-copy reveal">به امید آنکه کنار هم، شبی بسازیم که سال‌ها بعد با لبخند از آن یاد کنیم.</p>
+      <div class="closing-names reveal">Sogol <i>&amp;</i> Amirhossein</div>
+      <div class="closing-date reveal" data-d="dmy">۲۰ دی ۱۴۰۵</div>
+      <div class="footer-rule reveal" aria-hidden="true"><span></span><b>❦</b><span></span></div>
+    </section>
+  </main>
+
+  <!-- MUSIC CHOICE -->
+  <div id="musicPrompt" class="invite-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="musicTitle">
+    <div class="invite-modal-backdrop"></div>
+    <div class="invite-modal-card">
+      <button id="musicClose" class="invite-modal-close" type="button" aria-label="بستن">×</button>
+      <div class="invite-modal-vinyl" aria-hidden="true"><span>♫</span></div>
+      <p class="eyebrow">یک انتخاب کوچک</p>
+      <h2 id="musicTitle">این لحظه را با موسیقی همراه کنیم؟</h2>
+      <p>«اعجاز» — گوگوش</p>
+      <div class="invite-modal-actions">
+        <button id="musicYes" class="primary-btn" type="button">بله، با عشق</button>
+        <button id="musicNo" class="ghost-btn" type="button">ترجیح می‌دهم بدون موسیقی</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="پخش یا توقف موسیقی" hidden><span>♫</span></button>
+  <audio id="audio" preload="none" loop></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/cover.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
