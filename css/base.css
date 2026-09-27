@@ -1,0 +1,143 @@
+/* ============================================================================
+   Base — reset, texture, typography utilities, shared ornaments
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-weight: 300;
+  line-height: 1.9;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+body:not(.site-open) { overflow: hidden; }
+
+button, a, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; }
+a { text-decoration: none; }
+img { display: block; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* — film grain overlay ------------------------------ */
+.noise {
+  position: fixed; inset: 0; z-index: 200; pointer-events: none;
+  opacity: .04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+}
+
+/* — cursor halo (fine pointers only) ---------------- */
+.cursor-glow {
+  position: fixed; width: 240px; height: 240px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 191, 138, .18), transparent 68%);
+  pointer-events: none; transform: translate(-50%, -50%);
+  z-index: 1; display: none; mix-blend-mode: multiply;
+}
+@media (pointer: fine) { .cursor-glow { display: block; } }
+
+/* — foil text --------------------------------------- */
+.foil-text {
+  background: var(--foil);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* — small latin eyebrow label ---------------------- */
+.eyebrow {
+  font-family: var(--f-latin);
+  font-size: 12px; font-weight: 500;
+  letter-spacing: .34em; text-transform: uppercase;
+  color: var(--gold-ink);
+  margin: 0 0 20px;
+  text-indent: .34em;
+}
+
+/* — uppercase latin section tag --------------------- */
+.section-label {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin-bottom: 16px;
+}
+.section-label span {
+  font-family: var(--f-latin); font-weight: 500;
+  font-size: 13px; letter-spacing: .46em; text-transform: uppercase;
+  color: var(--gold-ink);
+  padding: 5px 16px;
+  border: 1px solid var(--line);
+  background: linear-gradient(var(--paper), var(--cream));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .7);
+}
+
+/* — nastaliq display title -------------------------- */
+.display-title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(30px, 7.2vw, 54px);
+  line-height: 1.5;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+.display-title em { font-style: normal; color: var(--gold-ink); }
+
+/* — foil divider with centre jewel ------------------ */
+.ornament-line, .footer-rule {
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; margin: 0 auto 40px; max-width: 420px;
+}
+.ornament-line span, .footer-rule span {
+  flex: 1; height: 1px;
+  background: var(--foil-line);
+  opacity: .75;
+}
+.ornament-line b, .footer-rule b {
+  font-size: 15px; color: var(--gold);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+/* — buttons ----------------------------------------- */
+.primary-btn, .ghost-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 30px; border-radius: 2px;
+  font-size: 13px; font-weight: 500; letter-spacing: .04em;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease),
+              background .35s var(--ease), color .35s var(--ease);
+}
+.primary-btn {
+  color: #fff8e6;
+  background: linear-gradient(160deg, #8a6a20, #b18c44 45%, #d3ae62);
+  box-shadow: 0 10px 24px -10px rgba(90, 64, 16, .65), inset 0 1px 0 rgba(255, 255, 255, .35);
+}
+.primary-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -10px rgba(90, 64, 16, .7), inset 0 1px 0 rgba(255, 255, 255, .4); }
+.ghost-btn {
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  background: rgba(255, 255, 255, .4);
+}
+.ghost-btn:hover { transform: translateY(-2px); border-color: var(--gold); color: var(--gold-ink); }
+
+/* — section shell ----------------------------------- */
+.section {
+  position: relative;
+  padding: 78px 18px;
+}
+
+@media (min-width: 700px) {
+  .section { padding: 96px 6vw; }
+  .note-paper { padding: 74px; }
+  .rsvp-card { padding: 60px; }
+}
+
+@media (max-width: 390px) {
+  .venue-copy { padding: 28px 20px; }
+  .rsvp-choices { grid-template-columns: 1fr; }
+}
+
+/* — reveal scaffolding (only hides when JS animates)  */
+.js-anim .reveal { opacity: 0; }
+html:not(.js-anim) .reveal { opacity: 1; }
