@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#efe5d2"/><stop offset=".5" stop-color="#d6c3a6"/><stop offset="1" stop-color="#9c7c54"/>
+</linearGradient>
+</defs>
+<rect width="900" height="760" fill="url(#g)"/>
+<rect x="24" y="24" width="852" height="712" fill="none" stroke="#ffffff" stroke-opacity=".26" stroke-width="1.5"/>
+<g fill="none" stroke="#fffdf9" stroke-opacity=".45" stroke-width="1.5">
+<circle cx="450" cy="330" r="200"/>
+<circle cx="450" cy="330" r="150"/>
+</g>
+<text x="450" y="320" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#fffdf9" fill-opacity=".92">A &#9825; S</text>
+<text x="450" y="366" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="8" fill="#fffdf9" fill-opacity=".8">VENUE PHOTO</text>
+</svg>

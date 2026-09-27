@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#f8f2e9"/><stop offset=".5" stop-color="#d9c9b5"/><stop offset="1" stop-color="#a98960"/>
+</linearGradient>
+<linearGradient id="foil" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#8a6a20"/><stop offset=".45" stop-color="#f3e6bd"/><stop offset=".55" stop-color="#f8efcf"/><stop offset="1" stop-color="#8a6a20"/>
+</linearGradient>
+</defs>
+<rect width="900" height="700" fill="url(#g)"/>
+<rect x="26" y="26" width="848" height="648" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="1.5"/>
+<circle cx="450" cy="330" r="196" fill="none" stroke="#fffdf9" stroke-opacity=".55" stroke-width="1.5"/>
+<circle cx="450" cy="330" r="176" fill="none" stroke="url(#foil)" stroke-opacity=".65" stroke-width="1"/>
+<text x="450" y="316" text-anchor="middle" font-family="Georgia,serif" font-size="64" fill="#fffdf9" fill-opacity=".95">A &#9825; S</text>
+<text x="450" y="362" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="8" fill="#fffdf9" fill-opacity=".8">YOUR PHOTO HERE</text>
+<path d="M380 402h140" stroke="#fffdf9" stroke-opacity=".5" stroke-width="1"/>
+</svg>
